@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi</title>
+    <style>
+        /* Animated background */
+        body {
+            background: linear-gradient(45deg, yellow,orange,red,pink,plum,hotpink,purple,indigo);
+            background-size: 400% 400%;
+            animation: bgAnimation 6s infinite alternate;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Animated text */
+        h1 {
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            text-shadow: 5px 5px 20px rgba(89, 77, 77, 8);
+            animation: colorChange 3s infinite alternate;
+        }
+
+        /* Color splash circles */
+        .color {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: splashAnimation 4s infinite;
+        }
+
+        /* Different color splashes */
+        .color:nth-child(1) { 
+            background: indigo; top: 20%; left: 30%; animation-delay: 0.5s; 
+             }
+        .color:nth-child(2) {
+             background: orange; top: 40%; left: 70%; animation-delay: 1s;
+             }
+        .color:nth-child(3) {
+             background: yellow; top: 60%; left: 50%; animation-delay: 1.5s;
+             }
+        .color:nth-child(4) {
+             background: green; top: 80%; left: 20%; animation-delay: 2s;
+             }
+        .color:nth-child(5) {
+             background: blue; top: 10%; left: 60%; animation-delay: 2.5s;
+             }
+        .color:nth-child(6) { 
+            background: violet; top: 50%; left: 10%; animation-delay: 3s;
+             }
+
+        /* Background gradient animation */
+        /* @keyframes bgAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        } */
+
+        /* Text color animation */
+        /* @keyframes colorChange {
+            0% { color: red; }
+            20% { color: orange; }
+            40% { color: yellow; }
+            60% { color: green; }
+            80% { color: blue; }
+            100% { color: violet; }
+        } */
+
+        /* Color splash movement */
+        /* @keyframes splashAnimation {
+            0% { transform: scale(0) translateY(0); opacity: 1; }
+            50% { transform: scale(1.5) translateY(-50px); opacity: 0.7; }
+            100% { transform: scale(2) translateY(-100px); opacity: 0; }
+        } */
+    </style>
+</head>
+<body>
+    <h1>Happy Holi 🎨</h1>
+
+    <!-- Color splashes -->
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+</body>
+</html>
